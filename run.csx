@@ -70,7 +70,7 @@ public static void Run(Stream myBlob, string name, out object outputDocument, IL
 
     //Cosmos DBのドキュメントを作成
     var culture = CultureInfo.CreateSpecificCulture("ja-JP");
-    outputDocument = new { Id = Guid.NewGuid(), Timestring = DateTime.UtcNow.AddHours(9.0).ToString("u", culture), PeopleCount = peopleCount, Place = "TEST2" };
+    outputDocument = new { Id = Guid.NewGuid(), Timestring = DateTime.UtcNow.AddHours(9.0).ToString("u", culture), PeopleCount = peopleCount, Place = "TEST" };
 }
 
 private static int CountPeople(string jsonString, double th)
